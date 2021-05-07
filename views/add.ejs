@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title><%= title %></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      color: aliceblue;
+      background: url("https://tse3.mm.bing.net/th?id=OIP.kfvtBmc1bNUTBVFbfpJWzgHaEo&pid=Api&P=0&w=241&h=152");
+    }
+  </style>
+    
+</head>
+<body>
+
+<div class="container">
+  <br/>
+  
+  <h2><center><%= title %></center></h2>
+  <br/>
+  <form action="/save" method="post">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter Name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone No:</label>
+      <input type="number" class="form-control" id="phone_no" placeholder="Enter Phone No" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="adress">Adress :</label>
+      <input type="text" class="form-control" id="add" placeholder="Enter your Adress" name="adress" required>
+    </div>
+    <button type="submit" class="btn btn-primary"><center>Submit</center></button>
+  </form>
+  
+</div>
+
+</body>
+</html>
